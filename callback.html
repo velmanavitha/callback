@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Task 1: Double the Numbers
+// Objective: Double each number in an array.
+// Instructions: Given an array of numbers, use the map method to create a new array where each number is doubled.
+
+
+let arr=[2,3,4,5,6,7,8,]
+let newarr=arr.map(function(val,ind,arr1){
+    return val+val
+})
+console.log(arr)
+console.log( newarr)
+
+// Task 2: Using map
+// Objective: Create a new array with each element squared.
+// Instructions: Given an array of numbers, use the map method to create a new array where each element is the square of the original element.
+let arra=[4,5,43,7,6,8,9,64]
+let newarra=arra.map(function(val,ind,arra1){
+    return val*val
+})
+console.log(arra)
+console.log(newarra)
+
+// Task 3: Using filter
+// Objective: Filter out even numbers.
+// Instructions: Given an array of numbers, use the filter method to create a new array that contains only the odd numbers.
+let num=[3,5,8,50,38,49,574,398,65,293,58,64,98,100,57,39,202,96,3,455]
+let newnum=num.filter(function(val,ind,num1){
+    return val%2!==0
+})
+console.log(num)
+console.log(newnum)
+
+
+// Task 4: Filter Long Words
+// Objective: Filter out words longer than 5 characters.
+// Instructions: Given an array of words, use the filter method to create a new array that contains only words with 5 or fewer characters.
+
+let words=["hii","hello","navitha","html","javascript","rishitha","gouthami"]
+let newwords=words.filter(function(val,ind,words1){
+    return val.length<=5
+})
+console.log(words)
+console.log(newwords)
+
+
+    </script>
+</body>
+</html>
